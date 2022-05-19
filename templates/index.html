@@ -1,0 +1,141 @@
+<html>
+<head>
+
+<title>NBFC Loan Default</title>
+<style>
+
+form {
+
+text-align:center
+}
+
+input{
+width: 50%
+}
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  width: 10%
+}
+
+select {
+width: 50%;
+}
+label {
+  font-size: 20px;
+  display: inline-block;
+  width: 300px;
+  text-align: right;
+}​
+
+
+</style>
+</head>
+
+<body>
+<center><img src="/static/Untitled design.png" alt="Loan Default logo",width="200" height="200">
+
+<center><h1>NBFC Loan Default Prediction: {{ results}}</h1></center>
+
+<form action="{{ url_for('predict')}}" method="post">
+
+
+<label for = "BALANCE_TENURE">BALANCE_TENURE</label>
+<input type = 'text' id = 'fnam', name = 'BALANCE_TENURE', required = 'required', placeholder = "Enter BALANCE_TENURE..." />
+
+<br></br>
+
+<label for = "CURRENT_INTEREST_RATE_MAX">CURRENT_INTEREST_RATE_MAX</label>
+<input type = 'text' id = 'fnam', name = 'CURRENT_INTEREST_RATE_MAX', required = 'required', placeholder = "Enter CURRENT_INTEREST_RATE_MAX..." />
+
+<br></br>
+
+<label for = "DPD">DPD</label>
+<input type = 'text' id = 'DPD', name = 'DPD', required = 'required', placeholder = "Enter DPD..." />
+
+<br></br>
+
+
+<label for = "EMI_DUEAMT">EMI_DUEAMT</label>
+<input type = 'text' id = 'EMI_DUEAMT', name = 'EMI_DUEAMT', required = 'required', placeholder = "Enter EMI_DUEAMT..." />
+
+<br></br>
+
+<label for = "EMI_OS_AMOUNT">EMI_OS_AMOUNT</label>
+<input type = 'text' id = 'EMI_OS_AMOUNT', name = 'EMI_OS_AMOUNT', required = 'required', placeholder = 'Enter EMI_OS_AMOUNT...' />
+
+
+<br></br>
+
+<label for = "FOIR">FOIR</label>
+<input type = 'text' id = 'FOIR', name = 'FOIR', required = 'required', placeholder = 'Enter  FOIR...' />
+
+<br></br>
+
+<label for = "NET_LTV">NET_LTV</label>
+<input type = 'text' id = 'NET_LTV', name = 'NET_LTV', required = 'required', placeholder = 'Enter  NET_LTV...' />
+
+
+<br></br>
+
+<label for = "NET_RECEIVABLE">NET_RECEIVABLE</label>
+<input type = 'text' id = 'NET_RECEIVABLE', name = 'NET_RECEIVABLE', required = 'required', placeholder = "Enter NET_RECEIVABLE..." />
+
+
+<br></br>
+
+<label for = "OUTSTANDING_PRINCIPAL">OUTSTANDING_PRINCIPAL</label>
+<input type = 'text' id = 'OUTSTANDING_PRINCIPAL', name = 'OUTSTANDING_PRINCIPAL', required = 'required', placeholder = "Enter OUTSTANDING_PRINCIPAL..." />
+
+
+<br></br>
+
+<label for = "NPA_IN_CURRENT_MONTH">NPA_IN_CURRENT_MONTH</label>
+<input type = 'text' id = 'NPA_IN_CURRENT_MONTH', name = 'NPA_IN_CURRENT_MONTH', required = 'required', placeholder = "Enter NPA_IN_CURRENT_MONTH..." />
+
+
+<br></br>
+
+<label for = "DUEDAY_5">DUEDAY_5</label>
+<input type = 'text' id = 'DUEDAY_5', name = 'DUEDAY_5', required = 'required', placeholder = "Enter DUEDAY_5..." />
+
+
+<br></br>
+
+<label for = "DUEDAY_15">DUEDAY_15</label>
+<input type = 'text' id = 'DUEDAY_15', name = 'DUEDAY_15', required = 'required', placeholder = "Enter DUEDAY_15..." />
+
+
+<br></br>
+
+<label for = "PRODUCT_LAP">PRODUCT_LAP</label>
+<input type = 'text' id = 'PRODUCT_LAP', name = 'PRODUCT_LAP', required = 'required', placeholder = "Enter PRODUCT_LAP..." />
+
+
+<br></br>
+
+<label for = "PRODUCT_STHL">PRODUCT_STHL</label>
+<input type = 'text' id = 'PRODUCT_STHL', name = 'PRODUCT_STHL', required = 'required', placeholder = "Enter PRODUCT_STHL..." />
+
+
+<br></br>
+<label for = "PRODUCT_STLAP">PRODUCT_STLAP</label>
+<input type = 'text' id = 'PRODUCT_STLAP', name = 'PRODUCT_STLAP', required = 'required', placeholder = "Enter PRODUCT_STLAP..." />
+
+
+<br></br>
+
+<label></label>
+<input id="submit" type="submit" value="Predict" ></input>
+
+</form>
+
+</body>
+
+
+
+
+
+
+</html>
