@@ -5,5 +5,6 @@ This study focuses on understanding and optimizing the factors affecting foreclo
 
 ## Screenshots
 
-![App Screenshot](file:///C:/Users/am236/OneDrive%20-%20DXC%20Production/Desktop/Deployment/Capture.JPG)
+![NBFX-Loan-Default-Sample SS](https://user-images.githubusercontent.com/103100967/169645962-74dfd07c-d4fd-4a6b-8646-74e95dfa89d4.JPG)
+
 
