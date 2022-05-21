@@ -30,8 +30,8 @@ def predict():
         prediction = model.predict([[BALANCE_TENURE, CURRENT_INTEREST_RATE_MAX, DPD, EMI_DueAmount, EMI_OS_AMOUNT, FOIR, NET_LTV,NET_RECEIVABLE,OUTSTANDING_PRINCIPAL,DUEDAY_5,DUEDAY_15,PRODUCT_LAP,PRODUCT_STHL,PRODUCT_STLAP]])
         pred = prediction[0]
         out = "Error"
-        if pred ==1:out = "Survived"
-        else: out = "Didn't Survived"
+        if pred ==1:out = "Foreclose"
+        else: out = "Didn't Foreclose"
         
         worksheet.append_row([name, out])
         return render_template('index.html', results = out)
